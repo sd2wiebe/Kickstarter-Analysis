@@ -3,9 +3,9 @@ Performing analysis on Kickstarter data to uncover trends
 
 
 Then I wanted to populate columns that totalled the number of successful kickstarter campaigns that had the subcategory “plays” for each goal range. In order to populate the columns “Number Successful”, “Number Failed” I had to use the =countifs() function for each goal range. For example this is the formula used to populate the cell corresponding to “Number Successful” in the “<1000” goal range:
-‘’’
+'''
 =COUNTIFS('Kickstarter Data'!$D:$D,"<1000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
-‘’’
+'''
 I ran a similar formula for the “Number Failed” column, and then created the total projects column in order  to populate columns for “Percentage Successful” and “Percentage Failed”
 
 <p align="center"
